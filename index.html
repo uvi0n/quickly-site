@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quickly — бот, который отвечает покупателям за продавца</title>
+  <meta name="description" content="Quickly отвечает покупателям по вашей таблице товаров, торгуется в пределах вашей минимальной цены и бронирует товар.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <nav>
+      <a class="logo" href="./">Quickly</a>
+      <a href="privacy.html">Конфиденциальность</a>
+    </nav>
+  </header>
+
+  <h1>Бот, который отвечает покупателям за вас</h1>
+  <p class="lead">
+    Вы ведёте таблицу товаров — Quickly сам отвечает покупателям по ней, торгуется
+    в пределах вашей минимальной цены и бронирует товар. Вас зовёт только тогда,
+    когда без вас правда не обойтись.
+  </p>
+  <a class="cta" href="https://t.me/quicklyauto_bot">Открыть в Telegram</a>
+
+  <h2>Как это работает</h2>
+  <ol class="steps">
+    <li>Откройте бота и нажмите «Start». Выберите, где вести товары: в Google Таблице или в Excel.</li>
+    <li>Заполните таблицу: одна строка — один товар. Характеристики называете сами — подходит для одежды, техники, аренды, запчастей.</li>
+    <li>Бот выдаст ссылку на каждый товар. Вставьте её в объявление.</li>
+    <li>Покупатель переходит по ссылке — бот отвечает на вопросы, торгуется и бронирует товар. Вам приходит уведомление.</li>
+    <li>Продали — отметьте «Куплено», и ссылка отключится.</li>
+  </ol>
+
+  <h2>Так выглядит таблица продавца</h2>
+  <div class="table-wrap">
+    <table>
+      <tr class="seller-row"><td colspan="7">ID продавца: 6817366482</td></tr>
+      <tr><th>№ лота</th><th>Название</th><th>Цена</th><th>Мин цена</th><th>Размер</th><th>Доп инф.</th><th>Статус</th></tr>
+      <tr><td>1</td><td>Очки LV</td><td>9000</td><td>8000</td><td></td><td>Оригинал</td><td class="status reserved">Бронь</td></tr>
+      <tr><td>2</td><td>Сумка Chrome</td><td>17000</td><td>15800</td><td></td><td>Отличное</td><td class="status active">Активно</td></tr>
+      <tr><td>3</td><td>Куртка Carhartt</td><td>8000</td><td>6500</td><td>L</td><td></td><td class="status hidden">Скрыто</td></tr>
+      <tr><td>4</td><td>Худи Stussy</td><td>4500</td><td></td><td>M</td><td></td><td class="status sold">Куплено</td></tr>
+    </table>
+  </div>
+
+  <h2>Чего бот не делает</h2>
+  <div class="card">
+    <p>Не выдумывает: отвечает только тем, что написано в вашей таблице, а если факта нет — зовёт вас.</p>
+    <p>Не опускается ниже вашей минимальной цены — и не называет её покупателю.</p>
+    <p>Не обсуждает переводы денег, предоплату и личные встречи: такие диалоги сразу передаются вам.</p>
+  </div>
+
+  <footer>
+    Quickly · <a href="privacy.html">Политика конфиденциальности</a> ·
+    вопросы — в <a href="https://t.me/quicklyauto_bot">Telegram-боте</a>
+  </footer>
+</main>
+</body>
+</html>
